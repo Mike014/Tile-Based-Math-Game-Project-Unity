@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.Search;
 using UnityEngine;
 
 public enum MathsOperation
@@ -19,6 +20,8 @@ public class Problem : MonoBehaviour
     public float[] answers;
     public int correctTube;
 
-
-
+    bool IsGameOver(int score)
+    {
+        return score == 10;
+    }
 }
